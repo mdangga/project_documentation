@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="backgroun"></nav>
     <nav id="navbar">
+        <header>Python Documentation</header>
         <ul>
-            <li><a href="#pendahuluan" class="nav-link">Pendahuluan</a></li>
-            <li><a href="#hello_world" class="nav-link">Hello World</a></li>
-            <li><a href="#komentar" class="nav-link">Komentar</a></li>
-            <li><a href="#tipe_data" class="nav-link">Tipe Data</a></li>
-            <li><a href="#variabel" class="nav-link">Variabel</a></li>
-
+            <li><a class="nav-link" href="#Pendahuluan" >Pendahuluan</a></li>
+            <li><a class="nav-link" href="#Hello_World" >Hello World</a></li>
+            <li><a class="nav-link" href="#Komentar_Python" >Komentar Python</a></li>
+            <li><a class="nav-link" href="#Tipe_Data_Python" >Tipe Data Python</a></li>
+            <li><a class="nav-link" href="#Variabel_Python">Variabel Python</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="pendahuluan">
+        <section class="main-section" id="Pendahuluan">
             <header>Pendahuluan</header>
             <article>
                 <p>
@@ -28,24 +33,25 @@
                     dibaca dan dipahami, python lebih menekankan pada keterbacaan kode agar lebih mudah untuk memahami
                     sintaks. Hal ini membuat Python sangat mudah dipelajari baik untuk pemula maupun untuk yang sudah
                     menguasai bahasa pemrograman lain.
-
+                </p>
+                <p>
                     Bahasa ini muncul pertama kali pada tahun 1991, dirancang oleh seorang bernama Guido van Rossum.
                     Sampai saat ini Python masih dikembangkan oleh Python Software Foundation. Bahasa Python mendukung
                     hampir semua sistem operasi, bahkan untuk sistem operasi Linux, hampir semua distronya sudah
                     menyertakan Python di dalamnya.
-
+                </p>
+                <p>
                     Dengan kode yang simpel dan mudah diimplementasikan, seorang programmer dapat lebih mengutamakan
                     pengembangan aplikasi yang dibuat, bukan malah sibuk mencari syntax error.
-
                 </p>
-                <code id="python">print("Python sangat simpel")</code>
+                <pre><code class="python">print("Python sangat simpel")</code></pre>
                 <p>Hanya dengan menuliskan kode print seperti yang diatas, anda sudah bisa mencetak apapun yang anda
                     inginkan di dalam tanda kurung (). Dibagian akhir kode pun, anda tidak harus mengakhirnya dengan
                     tanda semicolon ;
                 </p>
             </article>
         </section>
-        <section class="main-section" id="hello_world">
+        <section class="main-section" id="Hello_World">
             <header>Hello World</header>
             <article>
                 <p>
@@ -58,7 +64,7 @@
                     pisahkan dengan spasi.</p>
                 <p>Jika ingin mencetak tipe data String langsung, Anda harus memasukanya ke dalam tanda kutip terlebih
                     dahulu.</p>
-                <code id="python">print("Hello World")</code>
+                <pre><code class="python">print("Hello World")</code></pre>
                 <p>Saat anda menjalankan script diatas, Anda akan melihat output berupa text <code>Hello World</code></p>
                 <h3>Case Sensitive</h3>
                 <p>Python bersifat case sensitif, ini artinya huruf besar dan huruf kecil memiliki perbedaan. Sebagai
@@ -67,7 +73,7 @@
                 <p>Aturan ini berlaku untuk nama variabel ataupun fungsi-fungsi lainnya.</p>
             </article>
         </section>
-        <section class="main-section" id="komentar">
+        <section class="main-section" id="Komentar_Python">
             <header>Komentar Python</header>
             <article>
                 <p>
@@ -85,7 +91,8 @@
                 <p>
                 Dibawah ini adalah contoh penggunaan komentar pada Python
                 </p>
-                <pre><code class="python">#Ini adalah komentar
+                <pre><code class="python">
+                        #Ini adalah komentar
 
                         # Tulisan ini tidak akan dieksekusi
 
@@ -117,16 +124,16 @@
                     </p>
             </article>
         </section>
-        <section class="main-section" id="tipe_data">
+        <section class="main-section" id="Tipe_Data_Python">
             <header>Tipe Data Python</header>
             <article>
-                p>Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi.</p>
+                <p>Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi.</p>
                 <p>Python sendiri mempunyai tipe data yang cukup unik bila kita bandingkan dengan bahasa pemrograman
                     yang lain.</p>
-                <p>Berikut adalah tipe data dari bahasa pemrograman Python :</p>
+                <p>Berikut adalah tipe data dari bahasa pemrograman Python :</p><br>
                 <table>
                     <thead>
-                        <tr>
+                        <tr class="head_table">
                             <th>Tipe Data</th>
                             <th>Contoh</th>
                             <th>Penjelasan</th>
@@ -182,28 +189,39 @@
                         </tr>
                     </tbody>
                 </table>
+                <br>
                 <p>Untuk mencoba berbagai macam tipe data, silahkan coba script Python dibawah ini.</p>
-                <pre><code class="python">#tipe data Boolean
+                <pre><code class="python">
+                    #tipe data Boolean
                     print(True)
+
                     #tipe data String
                     print("Ayo belajar Python")
                     print('Belajar Python Sangat Mudah')
+
                     #tipe data Integer
                     print(20)
+
                     #tipe data Float
                     print(3.14)
+
                     #tipe data Hexadecimal
                     print(9a)
+
                     #tipe data Complex
                     print(5j)
+
                     #tipe data List
                     print([1,2,3,4,5])
                     print(["satu", "dua", "tiga"])
+
                     #tipe data Tuple
                     print((1,2,3,4,5))
                     print(("satu", "dua", "tiga"))
+
                     #tipe data Dictionary
                     print({"nama":"Budi", 'umur':20})
+
                     #tipe data Dictionary dimasukan ke dalam variabel biodata
                     biodata = {"nama":"Andi", 'umur':21} #proses inisialisasi variabel biodata
                     print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary
@@ -211,8 +229,8 @@
                 </code></pre>
             </article>
         </section>
-        <section class="main-section" id="variabel">
-            <header>Variable Python</header>
+        <section class="main-section" id="Variabel_Python">
+            <header>Variabel Python</header>
             <article>
                 <p>Variabel adalah lokasi memori yang dicadangkan untuk menyimpan nilai-nilai. Ini berarti bahwa ketika
                     Anda membuat sebuah variabel Anda memesan beberapa ruang di memori. Variabel menyimpan data yang
@@ -222,21 +240,26 @@
                     sifat yang dinamis, artinya variabel Python tidak perlu didekralasikan tipe data tertentu dan
                     variabel Python dapat diubah saat program dijalankan.</p>
                 <p>Penulisan variabel Python sendiri juga memiliki aturan tertentu, yaitu :</p>
-                <ol>
+                <ul>
+                    <li>Karakter pertama harus berupa huruf atau garis bawah/underscore <code>_</code></li>
+                    <li>Karakter pertama harus berupa huruf atau garis bawah/underscore <code>_</code></li>
                     <li>Karakter pertama harus berupa huruf atau garis bawah/underscore <code>_</code></li>
                     <li>Karakter selanjutnya dapat berupa huruf, garis bawah/underscore <code>_</code> atau angka</li>
                     <li>Karakter pada nama variabel bersifat sensitif (case-sensitif). Artinya huruf kecil dan huruf
                         besar dibedakan. Sebagai contoh, variabel <code>namaDepan</code> dan <code>namadepan</code>
                         adalah variabel yang berbeda.</li>
-                </ol>
+                </ul>
                 <p>Untuk mulai membuat variabel di Python caranya sangat mudah, Anda cukup menuliskan variabel lalu
                     mengisinya dengan suatu nilai dengan cara menambahkan tanda sama dengan <code>=</code> diikuti
                     dengan nilai yang ingin dimasukan.</p>
                 <p>Dibawah ini adalah contoh penggunaan variabel dalam bahasa pemrograman Python</p>
-                <pre><code class="python">#proses memasukan data ke dalam variabel
+                <pre><code class="python">
+                    #proses memasukan data ke dalam variabel
                     nama = "John Doe"
+
                     #proses mencetak variabel
                     print(nama)
+
                     #nilai dan tipe data dalam variabel dapat diubah
                     umur = 20 #nilai awal
                     print(umur) #mencetak nilai umur
@@ -244,12 +267,14 @@
                     umur = "dua puluh satu" #nilai setelah diubah
                     print(umur) #mencetak nilai umur
                     type(umur) #mengecek tipe data umur
+                    
                     namaDepan = "Budi"
                     namaBelakang = "Susanto"
                     nama = namaDepan + " " + namaBelakang
                     umur = 22
                     hobi = "Berenang"
                     print("Biodata\n", nama, "\n", umur, "\n", hobi)
+                    
                     #contoh variabel lainya
                     inivariabel = "Halo"
                     ini_juga_variabel = "Hai"
@@ -260,6 +285,16 @@
                     luas = panjang \* lebar
                     print(luas)
                 </code></pre>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>All the documentation in this page is taken from <a
+                            href="https://belajarpython.com/tutorial/apa-itu-python/" target="_blank">belajarpython</a>
+                    </li>
+                </ul>
             </article>
         </section>
     </main>
