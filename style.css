@@ -4,15 +4,122 @@
 }
 body{
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(python.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+    left: 10vw;
 }
 #navbar{
-    width: 20vw;
-    background-color: bisque;
+    width: 300px;
+    height: 100vh;
     position: fixed;
+    border-right: 2px solid #C7E9B0;
+    background-color: #DDFFBB;
 }
 #main-doc{
-    position: absolute;
-    width: 77vw;
-    margin-left: 22vw;
-    background-color: blue;
+    position: relative;
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #C7E9B0;
+}
+#navbar header{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    height: 50px;
+    border-bottom: 2px solid #B3C99C;
+}
+#navbar ul li{
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+#navbar ul a{
+    text-decoration: none;
+    color: #333;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 30px 0;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+    transition: border-left ease-in 0.5s;
+}
+#navbar ul li a:hover{
+    border-left: 5px solid #A4BC92;
+    color: #A4BC92;
+}
+#navbar ul li a:visited{
+    border-left: 5px solid #B3C99C;
+}
+#main-doc .main-section{
+    padding: 20px 20px 20px 40px;
+    border-bottom: 2px solid #A4BC92;
+}
+.main-section header{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-section p{
+    margin-bottom: 10px;
+}
+table{
+    background-color: #B3C99C;
+    margin: 0 auto;
+}
+.head_table{
+    background-color: #DDFFBB;
+}
+td{
+    background-color: #C7E9B0;
+    padding: 2px 10px;
+}
+code{
+    font-family: monospace;
+}
+.python{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100vw;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #A4BC92;
+    }
+    #main-doc {
+        width: 100vw;
+        margin-left: 0;
+        padding-top: 20px;
+    }
 }
