@@ -35,7 +35,7 @@ body{
     overflow-y: auto;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #C7E9B0;
+    background-color: rgba(199, 233, 176, 0.85);
 }
 #navbar header{
     font-size: 25px;
